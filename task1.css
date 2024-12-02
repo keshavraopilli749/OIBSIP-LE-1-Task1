@@ -1,0 +1,84 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #333;
+    color: #fff;
+  }
+  
+  .nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+  }
+  
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 5rem 2rem;
+    background: #f4f4f4;
+  }
+  
+  .cta {
+    padding: 0.5rem 1rem;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .about, .services {
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  
+  .service-card {
+    margin: 1rem;
+    padding: 2rem;
+    background: #eaeaea;
+    border: 1px solid #ddd;
+    display: inline-block;
+    width: calc(30% - 2rem);
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav ul {
+      flex-direction: column;
+    }
+  
+    .service-card {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero {
+      padding: 3rem 1rem;
+    }
+  
+    .service-card {
+      width: 100%;
+    }
+  }
+  
